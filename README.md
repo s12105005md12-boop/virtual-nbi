@@ -25,9 +25,19 @@ the NBI spectral range. It is the code companion of:
   deeper vessels), enhancing hemoglobin contrast and providing
   microvascular-pattern information that improves **specificity** (e.g.,
   91.3% vs 51.3% in Wang et al., *Laryngoscope* 2024).
+- **The microvascular target is shared across head-and-neck sites.** The
+  intraepithelial papillary capillary loop (IPCL) pattern marks malignant
+  transformation in the larynx and hypopharynx (Kim et al., *Head Neck* 2020;
+  Galli et al., *J Clin Med* 2021), just as the Ni classification formalizes
+  nasopharyngeal vascular patterns. vNBI therefore generalizes beyond any
+  single tumor site.
 - **vNBI extracts that information from WLI.** The spectral content of a WLI
   RGB frame partially overlaps the NBI absorption bands, so it can be
-  re-weighted into NBI-like channels — no additional hardware.
+  re-weighted into NBI-like channels — no additional hardware. The method is
+  demonstrated on oropharyngeal carcinoma (Stanford SCOPE-HN dataset); our
+  PRISMA-ScR scoping review of 15 AI-assisted endoscopic nasopharyngeal
+  carcinoma studies (2018–2026), the largest head-and-neck endoscopic AI
+  literature, frames the clinical rationale.
 
 ## What's inside
 

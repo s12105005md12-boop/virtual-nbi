@@ -2,6 +2,10 @@
 
 **Virtual narrow-band imaging (vNBI) from white-light endoscopy — open-source, real-time, hardware-free.**
 
+![WLI to virtual NBI](docs/figure_vnbi.png)
+
+*(a) white-light input · (b) vNBI (spectral color-matrix) · (c) log-ratio hemoglobin map · (d) Frangi vesselness · (e) real NBI reference — SCOPE-HN frame 001_1)*
+
 This package converts conventional white-light (WLI) endoscopic frames into
 narrow-band-imaging (NBI)-like images by re-weighting the WLI RGB signal into
 the NBI spectral range. It is the code companion of:

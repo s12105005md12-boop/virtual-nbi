@@ -85,13 +85,18 @@ def ica_channels(rgb, n_components=3, max_iter=500):
 
 
 def frangi_vesselness(rgb, channel="green"):
-    """Frangi vesselness (optional; needs scikit-image). Scale in [0,1]."""
+    """Frangi vesselness (optional; needs scikit-image). Scale in [0,1].
+
+    Endoscopic vessels contain hemoglobin and therefore appear dark on the
+    mucosa, so dark ridges are detected (black_ridges=True). The sigma range
+    covers the relatively thick mucosal vessels seen at 1080p.
+    """
     from skimage.filters import frangi
     if channel == "green":
         src = rgb[..., 1]
     else:
         src = channel_combination(rgb)
-    v = frangi(src, sigmas=range(1, 5, 1), black_ridges=False)
+    v = frangi(src, sigmas=range(2, 13, 2), black_ridges=True)
     return np.clip((v - v.min()) / (np.ptp(v) + 1e-9), 0.0, 1.0)
 
 

@@ -4,7 +4,7 @@
 
 ![WLI to virtual NBI](docs/figure_vnbi.png)
 
-*(a) white-light input · (b) vNBI (spectral color-matrix) · (c) log-ratio hemoglobin map — SCOPE-HN frame 001_1)*
+*(a) white-light input · (b) vNBI (spectral color-matrix) · (c) log-ratio hemoglobin map · (d) Frangi-detected vessels (too faint to see directly) projected as contours on the log-ratio map — SCOPE-HN frame 001_1)*
 
 This package converts conventional white-light (WLI) endoscopic frames into
 narrow-band-imaging (NBI)-like images by re-weighting the WLI RGB signal into
@@ -88,7 +88,7 @@ Per-frame conversion latency at 1920×1080 on a standard CPU (mean of 50 runs):
 | band re-weighting (`channel`) | 58.8 ms | 17 fps |
 | spectral color matrix (`matrix`) | 82.1 ms | 12 fps |
 | log-ratio hemoglobin maps | 271.8 ms | ~4 fps |
-| Frangi vesselness | 19.2 s | offline / supervision signal |
+| Frangi vesselness | 9.5 s (1080p) / 2.4 s (0.5×) | offline / supervision signal |
 
 ## Quantitative evidence (preliminary)
 
